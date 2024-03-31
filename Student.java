@@ -26,10 +26,13 @@ public class Student {
     }
      public static void main(String[] args) throws ParseException {
        
-            // Creating a new student
             Student student = new Student("John Doe", "01-01-2000");
-            // Displaying student details
             student.displayDetails();
+            StudentCourses studentCourses = new StudentCourses();
+            studentCourses.addCourseMark("C++", 90);
+            studentCourses.addCourseMark("Java", 85);
+            studentCourses.addCourseMark("C#", 88);
+            studentCourses.displayCoursesAndMarks();
 
   }
 }
